@@ -1,0 +1,111 @@
+// Default settings
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", "Montserrat", sans-serif, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  font-size: $defaultFontSize;
+  letter-spacing: 0.05rem;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#root {
+  height: 100%;
+}
+
+.app-grid-container {
+  margin: 0 auto;
+  max-width: 192rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas: "infobar" "headers" "main" "footers";
+  height: 100%;
+}
+.infobar {
+  grid-area: infobar;
+  padding: $defaultPadding;
+  background-color: $themeRed;
+}
+
+.headers {
+  grid-area: headers;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footers {
+  grid-area: footers;
+}
+
+// displays shortcuts
+
+.flexBox {
+  display: flex;
+  align-items: center;
+
+  &.jcc {
+    justify-content: center;
+  }
+
+  &.jcspb {
+    justify-content: space-between;
+  }
+  &.jcfe {
+    justify-content: flex-end;
+  }
+  &.jcfs {
+    justify-content: flex-start;
+  }
+  &.fdc {
+    flex-direction: column;
+  }
+}
+
+.gridBox {
+  display: grid;
+  place-items: center;
+}
+
+.btn {
+  background-color: $themeRed;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+}
+
+.img-fitting {
+  width: 100%;
+  object-fit: contain;
+}

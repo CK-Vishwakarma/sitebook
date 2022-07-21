@@ -1,0 +1,25 @@
+.header-container {
+  padding: 1.5rem 5rem;
+  .section-left {
+    .logo {
+      font-size: 3rem;
+      margin-right: 5rem;
+    }
+    .location {
+      margin-right: 5rem;
+      .icon {
+        font-size: 2rem;
+        margin-right: 1rem;
+      }
+      .location-text {
+        display: flex;
+        align-items: baseline;
+        margin-right: 0.5rem;
+      }
+    }
+    .seachbar-container {
+      background-color: #d9d9d9;
+      border-radius: 1rem;
+    }
+  }
+}

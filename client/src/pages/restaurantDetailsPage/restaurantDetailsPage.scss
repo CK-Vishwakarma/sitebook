@@ -1,0 +1,116 @@
+@import "../../scss/variables";
+.restaurant-details-page {
+  padding: 2rem 5rem;
+
+  .image-gallary {
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .main-image {
+      width: 60%;
+      height: 100%;
+      .img-fitting {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .thumbnail-images {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      .thumbnail-img {
+        width: 49%;
+        height: 49%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 0.5px solid black;
+        .img-fitting {
+          height: 100%;
+          object-fit: cover;
+        }
+        .upload-icon {
+          font-size: 5rem;
+          color: rgb(149, 146, 146);
+          display: flex;
+          justify-content: center;
+        }
+        .upload-text {
+          font-size: 2rem;
+          color: rgb(149, 146, 146);
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .address-info {
+    align-items: flex-start;
+    padding: 3rem 0;
+    .address {
+      h1 {
+        font-weight: bold;
+      }
+      p {
+        color: #938e8e;
+        margin-bottom: 0;
+      }
+      .timing {
+        margin-top: 1rem;
+
+        .time {
+          margin-right: 1rem;
+          .open {
+            color: #427851;
+          }
+          .close {
+            color: #e15757;
+          }
+        }
+
+        .more-info {
+          font-size: 2rem;
+        }
+      }
+    }
+    .rating {
+      .points {
+        background-color: #427851;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        margin-right: 01rem;
+      }
+    }
+  }
+  .empty-div {
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+  }
+  .actions {
+    .btn-pills {
+      display: flex;
+      align-items: center;
+      margin-right: 1.5rem;
+      border: 0.01rem solid black;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      .icon {
+        margin-right: 0.5rem;
+        color: #e15757;
+      }
+      .text {
+        color: #000000;
+      }
+    }
+  }
+}
